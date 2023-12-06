@@ -41,7 +41,7 @@ CORS(app)
 
 reader = easyocr.Reader(['id'])
 
-#Get OCR Data (still a guess, haven't tried it yet)
+#Get OCR Data (Still a guess, haven't tried it yet)
 def getOCRData(params):
     response = requests.get(params)
     image = Image.open(BytesIO(response.content))
