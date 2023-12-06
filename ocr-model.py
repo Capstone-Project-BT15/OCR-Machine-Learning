@@ -45,11 +45,11 @@ reader = easyocr.Reader(['id'])
 def getOCRData(params):
     response = requests.get(params)
     image = Image.open(BytesIO(response.content))
-    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY) #Convert Image to GrayScale
     gaussian = cv2.GaussianBlur(src=gray,ksize=(3, 3),sigmaX=0,sigmaY=0)
     clahe = cv2.createCLAHE(clipLimit=2.00, tileGridSize=(12, 12))
     image = clahe.apply(gaussian)
-    _, final_image = cv2.threshold(image, thresh=165, maxval=255, type=cv2.THRESH_TRUNC + cv2.THRESH_OTSU)
+    _, final_image = cv2.threshold(image, thresh=165, maxval=255, type=cv2.THRESH_TRUNC + cv2.THRESH_OTSU) #Thresholding to Improve Text Quality
     border_image = cv2.copyMakeBorder(
             src=final_image,
             top=20,
