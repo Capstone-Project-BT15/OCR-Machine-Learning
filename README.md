@@ -1,6 +1,6 @@
 # Flask OCR - Text recognition from identity card
 ___
-Flask OCR is a Python-based web application that utilizes Optical Character Recognition (OCR) to recognize identity cards and provide ease of use in the application. This part of program aims to simplify the process of extracting text from identity cards.
+Flask OCR is a Python web application that employs Optical Character Recognition (OCR) to identify and extract information from identity cards. The objective of this component is to streamline the text extraction process for identity cards, thus enhancing the application's usability.
 
 # Steps
 ___
@@ -19,4 +19,4 @@ ___
 
 # Disclaimer
 ___
-This part of program is far from perfect. The accuracy and reliability of OCR may vary depending on various factors, including the quality of the input image.
+This part of the program is far from perfect. The accuracy and reliability of OCR may vary depending on various factors, including the quality of the input image.
