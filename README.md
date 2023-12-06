@@ -4,7 +4,7 @@ Flask OCR is a Python-based web application that utilizes Optical Character Reco
 
 # Steps
 ___
-✅ Upload image of an identity card.
+✅ Upload image of an identity card.\n
 ✅ Extract textual information from the image.
 ✅ Display important information needed.
 ✅ Insert the extracted data to database
