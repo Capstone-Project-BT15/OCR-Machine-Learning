@@ -41,6 +41,7 @@ CORS(app)
 
 reader = easyocr.Reader(['id'])
 
+#Get OCR Data (still a guess, haven't tried it yet)
 def getOCRData(params):
     response = requests.get(params)
     image = Image.open(BytesIO(response.content))
@@ -70,10 +71,11 @@ def getOCRData(params):
       'Link Photo':params
       })
 
+#Still a guess, haven't tried it yet
 @app.route('/masuk',methods=['POST'])
 def upload():
     gcpClient = secretmanager.SecretManagerServiceClient()
-    keysName = f"projects/872765504345/secrets/gcs-key/versions/latest"
+    keysName = f"projects/xxx/secrets/gcs-key/versions/latest"
     response = gcpClient.access_secret_version(request={"name": keysName})
     credentials = json.loads(response.payload.data.decode('UTF-8'))
     client = storage.Client.from_service_account_info(credentials)
