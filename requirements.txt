@@ -1,0 +1,9 @@
+flask-cors==4.0.0
+easyocr==1.7.1
+Pillow==10.1.0	
+keras==2.15.0
+tensorflow==2.14.0
+scipy==1.11.4
+opencv-python==4.8.0.76
+google==2.0.3
+torch ==2.1.0+cu118
