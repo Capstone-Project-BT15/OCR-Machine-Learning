@@ -1,13 +1,13 @@
 # KTP Detection & Flask OCR (Text recognition from identity card)
 ___
-KTP Setection is a TensorFlow model using CNN to identify KTP from user's identity card. The objective of this component is to recognize user's identity card whether it is KTP or not. If the identitiy card recognized as a KTP, the algorithm will call Flask OCR.
+KTP Detection is a TensorFlow model using CNN to identify KTP from user's identity card. The objective of this component is to recognize user's identity card whether it is KTP or not. If the identitiy card recognized as a KTP, the algorithm will call Flask OCR.
 Flask OCR is a Python web application that employs Optical Character Recognition (OCR) to identify and extract information from identity cards. The objective of this component is to streamline the text extraction process for identity cards, thus enhancing the application's usability.
 
 # Steps
 ___
 1. Upload image of an identity card.
 2. Detecting identity card whether it is KTP or not.
-3. If it is a KTP then calling the flask OCR.
+3. If it is a KTP then calling the Flask OCR.
 4. Extract textual information from the image.
 5. Display important information needed.
 6. Insert the extracted data to database.
